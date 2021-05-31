@@ -1,0 +1,16 @@
+{
+    "shareName": {
+        "allocation": "0.01",
+        "ticker": "SHARE.NAME",
+        "yahoo": true
+    },
+    "shareName": {
+        "allocation": "0.01",
+        "ticker": "SHARE.NAME",
+        "yahoo": false
+    },
+    "shareName": {
+        "allocation": "0.01",
+        "ticker": "SHARE.NAME",
+    }
+}
