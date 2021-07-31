@@ -1,66 +1,56 @@
 {
     "ETPMPM": {
-        "allocation": 600,
+        "allocation": 0.06,
         "ticker": "ETPMPM.AX",
         "yahoo": false        
     },
     "IHVV": {
-        "allocation": 1675,
+        "allocation": 0.1675,
         "ticker": "IHVV.AX",
         "yahoo": true        
     },
     "PMGOLD": {
-        "allocation": 425,
+        "allocation": 0.085,
         "ticker": "PMGOLD.AX",
         "yahoo": false
     },
-    "FOOD": {
-        "allocation": 425,
-        "ticker": "FOOD.AX",
-        "yahoo": true
-    },
     "VAP": {
-        "allocation": 460,
+        "allocation": 0.046,
         "ticker": "VAP.AX",
         "yahoo": true        
     },
-    "MVA": {
-        "allocation": 200,
-        "ticker": "MVA.AX",
-        "yahoo": true        
-    },
     "VDBA": {
-        "allocation": 595,
+        "allocation": 0.0595,
         "ticker": "VDBA.AX",
         "yahoo": true        
     },
     "VDCO": {
-        "allocation": 595,
+        "allocation": 0.0595,
         "ticker": "VDCO.AX",
         "yahoo": true        
     },
     "VEFI": {
-        "allocation": 2000,
+        "allocation": 0.2,
         "ticker": "VEFI.AX",
         "yahoo": true
     },
     "VEU": {
-        "allocation": 780,
+        "allocation": 0.078,
         "ticker": "VEU.AX",
         "yahoo": true        
     },
     "VGE": {
-        "allocation": 660,
+        "allocation": 0.066,
         "ticker": "VGE.AX",
         "yahoo": true        
     },
     "VIF": {
-        "allocation": 800,
+        "allocation": 0.1,
         "ticker": "VIF.AX",
         "yahoo": true
     },
     "VTS": {
-        "allocation": 785,
+        "allocation": 0.0785,
         "ticker": "VTS.AX",
         "yahoo": true        
     }

@@ -4,7 +4,7 @@ import calculateBatchPrice from "./calculateBatchPrice";
 const getNextPurchaseBatch = (configuration: SharesConfigurations, pricesMatrix: Record<string, number>, minPurchaseAmount: number = 100): Record<string, number> => {
     const initialPurchase = generateInitialPurchase(pricesMatrix, minPurchaseAmount);
 
-    return getFinalPurchase(pricesMatrix, configuration, initialPurchase, 0.11);
+    return getFinalPurchase(pricesMatrix, configuration, initialPurchase, 0.15);
 }
 
 const generateInitialPurchase = (pricesMatrix: Record<string, number>, minPurchaseAmount: number) => {
@@ -36,9 +36,10 @@ const getPurchaseBalance = (pricesMatrix: Record<string, number>, weight: Record
 const checkPurchaseBalance = (purchaseBalance: Record<string, number>, configuration: SharesConfigurations, threshold = 0.15): Record<string, number> => {
     return Object.keys(configuration).reduce((checkResult, shareName) => {
         const {ticker, allocation} = configuration[shareName];
+        const realAllocation = allocation / 10000;
         const balance = purchaseBalance[ticker];
-        const isWithinThreshold = balance > allocation - allocation * threshold && balance < allocation + allocation * threshold;
-        const check = isWithinThreshold ? 1 : allocation - balance;
+        const isWithinThreshold = balance > realAllocation - realAllocation * threshold && balance < realAllocation + realAllocation * threshold;
+        const check = isWithinThreshold ? 1 : realAllocation - balance;
         return {
             ...checkResult,
             [ticker]: check
